@@ -1,0 +1,39 @@
+.merch-form {
+  padding: 16px;
+}
+
+.merch-form .form-header {
+  margin-bottom: 16px;
+}
+
+.merch-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.merch-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.merch-form .field-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.merch-form .option-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.merch-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
