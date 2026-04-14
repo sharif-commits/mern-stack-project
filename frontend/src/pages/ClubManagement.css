@@ -1,0 +1,538 @@
+.club-management {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* Statistics Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  color: #1a1a1a;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Filters Section */
+.filters-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.filter-row select {
+  padding: 0.6rem 0.75rem;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 0.7rem 0.85rem;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.form-group textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.input-error {
+  border-color: #dc2626;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 0.8rem;
+}
+
+/* Clubs Table */
+.clubs-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.clubs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.clubs-table thead {
+  background: #f8f9fa;
+}
+
+.clubs-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.clubs-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  color: #666;
+}
+
+.clubs-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.clubs-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.club-info strong {
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-info .phone {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.category-badge {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+td.number {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.status-badge.status-active {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 0.35rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.status-inactive {
+  background: #ffebee;
+  color: #c62828;
+  padding: 0.35rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn-view,
+.btn-toggle,
+.btn-delete {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-view {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.btn-view:hover {
+  background: #bbdefb;
+}
+
+.btn-toggle {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.btn-toggle:hover {
+  background: #ffe0b2;
+}
+
+.btn-toggle.active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.btn-delete {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.btn-delete:hover {
+  background: #ffcdd2;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #666;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #1a1a1a;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.detail-section {
+  margin-bottom: 2rem;
+}
+
+.detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-section h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row .label {
+  font-weight: 600;
+  color: #666;
+}
+
+.detail-row .value {
+  color: #1a1a1a;
+  text-align: right;
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.stats-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.event-item strong {
+  color: #1a1a1a;
+}
+
+.event-item span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 1rem;
+}
+
+.credentials-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.credentials-box-prominent {
+  padding: 1.25rem;
+  background: #ecfdf5;
+  border: 1px solid #10b981;
+  font-size: 1rem;
+}
+
+.credentials-box-prominent code {
+  background: #fff;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+}
+
+.warning-text {
+  color: #b45309;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.modal-actions {
+  padding: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: white;
+  color: #666;
+  border: 2px solid #e5e5e5;
+}
+
+.btn-secondary:hover {
+  background: #f8f9fa;
+  border-color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .clubs-table-container {
+    overflow-x: auto;
+  }
+
+  .clubs-table {
+    min-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .club-management {
+    padding: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-row {
+    flex-direction: column;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions button {
+    width: 100%;
+  }
+}
