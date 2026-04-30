@@ -7,7 +7,7 @@ Full-stack MERN application to manage Felicity and campus events, clubs, registr
 ## 1. Project Structure
 
 ```
-2024101035/
+2024101034/
 ├── backend/        # Node.js + Express + MongoDB API
 ├── frontend/       # React (Vite) single-page application
 ├── deployment.txt  # Notes for deployment
